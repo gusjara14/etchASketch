@@ -1,7 +1,7 @@
 console.log("testtesttest");
 
 let mainDiv = document.querySelector(".main");
-let gridSize = 25;
+let gridSize = 100;
 
 for(let index=1;index<=gridSize;index++) {
     let newRow = document.createElement("div");
