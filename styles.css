@@ -23,10 +23,19 @@ body{
 
 .etch {
     border:1px blue solid;
-    flex:0 1 30px;
+    flex:1 0 3px;
+    width:auto;
     height:30px;
-    width: 30px;
-    margin:5px;
+    margin:0px;
+    /* height:30px; */
+}
+
+.rows {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    justify-content:stretch;
+    height:auto;
 }
 
 .title {
