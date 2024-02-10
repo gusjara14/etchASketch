@@ -1,0 +1,30 @@
+* {
+    border:1px red solid;
+    background-color: tan;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.main {
+    border:1px red solid;
+    margin:1px;
+    display:flex;
+    flex-wrap:wrap;
+    flex:1 1 75px;
+}
+
+.etch {
+    border:1px blue solid;
+    flex:0 1 30px;
+    height:30px;
+}
+
+.title {
+    align-items:center;
+    color:red;
+    flex-grow:0;
+}
