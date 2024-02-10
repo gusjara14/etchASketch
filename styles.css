@@ -15,19 +15,21 @@ body{
     margin:1px;
     display:flex;
     justify-content:center;
-    align-items:center;
+    /* align-items:center; */
     flex-wrap:wrap;
-    flex:1 1 75px;
+    flex:1 1 600px;
+    height:500px;
 }
 
 .etch {
     border:1px blue solid;
     flex:0 1 30px;
     height:30px;
+    width: 30px;
+    margin:5px;
 }
 
 .title {
-    align-items:center;
     color:red;
     text-align: center;
     flex-grow:0;
