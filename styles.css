@@ -21,7 +21,7 @@ body{
     height:500px;
 }
 
-.etch {
+.blocks {
     /* border:1px blue solid; */
     flex:1 0 3px;
     width:auto;
