@@ -11,7 +11,7 @@ button.addEventListener("click", function() {
 
     gridSize = parseInt(prompt("Please enter a grid size between 1-100", 100));
 
-    while(gridSize>=100 || gridSize<=0) {
+    while(gridSize>100 || gridSize<1) {
         gridSize = parseInt(prompt("Please enter a grid size BETWEEN 1-100", "1-100"));
         console.log(gridSize);
     }
@@ -32,7 +32,7 @@ button.addEventListener("click", function() {
             newDiv.classList.add("blocks");
             newDiv.classList.add("etch");
     
-            newDiv.textContent = index;
+            // newDiv.textContent = index;
             newDiv.style.backgroundColor = "white";
             newRow.appendChild(newDiv);
             newDiv.addEventListener("mouseover", function() {
