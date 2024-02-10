@@ -6,13 +6,16 @@
 body{
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+    justify-content:center;
+    margin:8px;
 }
 
 .main {
     border:1px red solid;
     margin:1px;
     display:flex;
+    justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
     flex:1 1 75px;
 }
@@ -26,5 +29,6 @@ body{
 .title {
     align-items:center;
     color:red;
+    text-align: center;
     flex-grow:0;
 }
