@@ -1,5 +1,5 @@
 * {
-    /* border:1px red solid; */
+    border:1px red solid;
     background-color: tan;
 }
 
@@ -12,20 +12,19 @@ body{
 
 .main {
     /* border:1px red solid; */
-    margin:1px;
+    margin:0px;
     display:flex;
     justify-content:center;
     /* align-items:center; */
     flex-wrap:wrap;
-    flex:1 1 600px;
+    flex:0 0 500px;
     height:500px;
 }
 
 .blocks {
     /* border:1px blue solid; */
-    flex:1 0 3px;
-    width:auto;
-    height:30px;
+    flex:1 0 5px;
+    height:auto;
     margin:0px;
     /* height:30px; */
 }
@@ -42,4 +41,8 @@ body{
     color:red;
     text-align: center;
     flex-grow:0;
+}
+
+button {
+    background-color: burlywood;
 }

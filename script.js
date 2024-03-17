@@ -1,19 +1,20 @@
-let gridSize = 0;
 let mainDiv = document.querySelector(".main");
 let button = document.querySelector(".button");
 let body = document.querySelector("body");
 
 button.addEventListener("click", function() {
+    let gridSize = 0;
     body.removeChild(mainDiv);
     mainDiv = document.createElement("div");
     body.appendChild(mainDiv);
     mainDiv.classList.add("main");
 
-    gridSize = parseInt(prompt("Please enter a grid size between 1-100", 100));
+    // gridSize = parseInt(prompt("Please enter a grid size between 1-100", 100));
 
-    while(gridSize>100 || gridSize<1) {
+    while(gridSize>100 || gridSize<1 || gridSize == NaN) {
         gridSize = parseInt(prompt("Please enter a grid size BETWEEN 1-100", "1-100"));
         console.log(gridSize);
+        // return gridSize;
     }
 
     // if(gridSize>100) {
@@ -42,5 +43,3 @@ button.addEventListener("click", function() {
         mainDiv.appendChild(newRow);
     }
 })
-
-gridSize = 25;
